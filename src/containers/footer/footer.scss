@@ -1,0 +1,52 @@
+.footer {
+    height: 100vh;
+    background: linear-gradient(83.17deg, #090e21 -49.91%, #182354 62.75%);
+    .top {
+        img {
+            object-fit: cover;
+            max-height: 64vh;
+        }
+        // max-width: 100vh;
+    }
+    .bottom {
+        margin-top: 2%;
+        height: 20%;
+        color: white;
+        display: flex;
+        .footerBlocks {
+            height: fit-content;
+            .footer-links {
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            .titulliFooter {
+                color: #6e7594;
+                font-size: 20px;
+                width: 235px;
+                text-align: initial;
+            }
+            .tekstiAboutUsFooter {
+                width: 235px;
+                text-align: initial;
+            }
+        }
+    }
+    .lastPart {
+        display: flex;
+        .Copyright {
+            text-align: initial;
+        }
+        .privacyPolicy {
+            text-align: initial;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

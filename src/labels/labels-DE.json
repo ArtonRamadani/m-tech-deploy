@@ -1,0 +1,14 @@
+{
+    "labels_DE": [
+        {
+            "content": "Über uns",
+            "key": "AboutUs",
+            "name": "German"
+        },
+           {
+            "key": "Projects",
+            "content": "Projekt",
+            "name": "German"
+        }
+    ]
+}
