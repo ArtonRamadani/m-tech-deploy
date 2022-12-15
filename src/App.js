@@ -4,7 +4,7 @@ import './App.css';
 import Homepage from "./containers/homepage/homepage";
 import ContactUs from "./containers/contactUs/contactUs";
 import Header from "./components/header/header";
-import Footer from "./containers/footer/footer";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (

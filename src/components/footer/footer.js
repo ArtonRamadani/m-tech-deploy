@@ -5,9 +5,10 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="top">
+                <div className="gradienti"></div>
                 <img className='col-12' src={FooterIMG} alt="" />
             </div>
-            <div className="bottom container">
+            <div className="bottom container pb-5">
                 <div className=" footerBlocks col-3">
                     <h4 className="titulliFooter">ABOUT US</h4>
 

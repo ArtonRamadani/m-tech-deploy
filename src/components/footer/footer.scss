@@ -2,6 +2,17 @@
     height: 100vh;
     background: linear-gradient(83.17deg, #090e21 -49.91%, #182354 62.75%);
     .top {
+        .gradienti {
+            position: absolute;
+            width: 1600px;
+            height: 259px;
+            background: linear-gradient(
+                180deg,
+                #ffffff 7.81%,
+                rgba(255, 255, 255, 0.6) 55.21%,
+                rgba(255, 255, 255, 0) 100%
+            );
+        }
         img {
             object-fit: cover;
             max-height: 64vh;
@@ -9,6 +20,7 @@
         // max-width: 100vh;
     }
     .bottom {
+        margin-right: 0%;
         margin-top: 2%;
         height: 20%;
         color: white;
@@ -37,8 +49,12 @@
         }
     }
     .lastPart {
+        margin-top: 2%;
+        margin-right: 0%;
         display: flex;
         .Copyright {
+            color: white;
+
             text-align: initial;
         }
         .privacyPolicy {

@@ -1,173 +1,512 @@
-.slide {
-    .carousel-indicators {
-        .mainSliderButtons {
-            width: 226.12px !important;
-            height: 2px;
+.homepage {
+    .slide {
+        .carousel-indicators {
+            .mainSliderButtons {
+                width: 226.12px !important;
+                height: 2px;
+            }
+            .mainSliderButtons.active {
+                height: 2px !important;
+                background: #2e34ba;
+                transform: matrix(1, 0, 0, -1, 0, 0);
+            }
         }
-        .mainSliderButtons.active {
-            height: 2px !important;
-            background: #2e34ba;
-            transform: matrix(1, 0, 0, -1, 0, 0);
+        .carousel-inner {
+            height: 100vh;
+            .carousel-item {
+                .ImageDescription {
+                    position: absolute;
+                    left: 15%;
+                    top: 11%;
+                    color: white;
+                    text-align: start;
+                    font-size: 50px;
+                    // background-color: transparent;
+                }
+                .lokacioni {
+                    position: absolute;
+                    top: 25%;
+                    left: 15%;
+                    justify-content: center;
+                    align-items: baseline;
+                    .emri {
+                        color: white;
+                        font-weight: 400;
+                    }
+                    .emriNderteses {
+                        color: white;
+                        margin-right: 40px;
+                        font-weight: 600;
+                        align-items: baseline;
+                    }
+                    i {
+                        font-size: x-large;
+                        color: white;
+                    }
+                }
+                .shikoProjektin {
+                    position: absolute;
+                    top: 58%;
+                    left: 17%;
+                    max-width: 165px;
+                    min-width: 165px;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 20px;
+                    border-color: white;
+                    border-radius: 2px;
+                    border: 2px solid #ffffff;
+                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+                        rgba(0, 0, 0, 0.5);
+                    // opacity: 1.8%;
+                }
+            }
         }
     }
-    .carousel-inner {
-        height: 100vh;
-        .carousel-item {
-            .ImageDescription {
-                position: absolute;
-                left: 15%;
-                top: 11%;
-                color: white;
-                text-align: start;
-                font-size: 50px;
-                // background-color: transparent;
-            }
-            .lokacioni {
-                position: absolute;
-                top: 25%;
-                left: 15%;
-                justify-content: center;
-                align-items: baseline;
-                .emri {
-                    color: white;
-                    font-weight: 400;
+    .materialetPunuese {
+        height: auto;
+        .materialet {
+            margin: 5% auto;
+            position: static;
+            height: auto;
+            width: 90%;
+            background: linear-gradient(80.04deg, #c0cce2 56.3%, #dadfe8 103.52%);
+        }
+        .porduketTitle {
+            color: #232d58;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 55px;
+            font-style: normal;
+        }
+        .aranzhoCardat {
+            display: flex;
+            justify-content: space-evenly;
+            .card {
+                justify-content: space-between;
+                background-color: transparent;
+                border: none;
+                .card-img-top {
+                    height: 323px;
+                    border-radius: 0px;
                 }
-                .emriNderteses {
-                    color: white;
-                    margin-right: 40px;
-                    font-weight: 600;
+                .description {
+                    .cardTitle {
+                        color: #232d58;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        letter-spacing: 0.01em;
+                    }
+                    .cardText {
+                        color: #232d58;
+                    }
+                }
+            }
+        }
+    }
+    .descriptionOfWork {
+        background: linear-gradient(80.04deg, rgba(192, 204, 226, 0.2) 56.3%, rgba(218, 223, 232, 0.2) 103.52%);
+        mix-blend-mode: multiply;
+        opacity: 0.9;
+        .circle1 {
+            height: 58px;
+            width: 58px;
+            background-color: white;
+            border-radius: 50px;
+            margin-top: 6%;
+            margin-left: 23%;
+            position: absolute;
+
+            .numri1 {
+                height: 58px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                margin-left: 32.5%;
+
+                h2 {
+                    font-size: 20px;
+                    margin-left: 22%;
+                    min-width: max-content;
                     align-items: baseline;
-                }
-                i {
-                    font-size: x-large;
-                    color: white;
+                    display: flex;
+                    height: 15px;
                 }
             }
-            .shikoProjektin {
-                position: absolute;
-                top: 58%;
-                left: 17%;
-                max-width: 165px;
-                min-width: 165px;
-                color: white;
+        }
+        .circle2 {
+            height: 58px;
+            width: 58px;
+            background-color: white;
+            border-radius: 50px;
+            margin-top: 14%;
+            margin-left: 31%;
+            position: absolute;
+
+            .numri2 {
+                height: 58px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                margin-left: 32.5%;
+
+                h2 {
+                    font-size: 20px;
+                    margin-left: 22%;
+                    min-width: max-content;
+                    align-items: baseline;
+                    display: flex;
+                    height: 15px;
+                }
+            }
+        }
+        .circle3 {
+            height: 58px;
+            width: 58px;
+            background-color: white;
+            border-radius: 50px;
+            margin-top: 22.5%;
+            margin-left: 32.3%;
+            position: absolute;
+
+            .numri3 {
+                height: 58px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                margin-left: 32.5%;
+
+                h2 {
+                    font-size: 20px;
+
+                    margin-left: 22%;
+                    min-width: max-content;
+                    align-items: baseline;
+                    display: flex;
+                    height: 15px;
+                }
+            }
+        }
+        .pershkrimiXhamitPVC {
+            margin-top: 76px;
+            margin-bottom: 50px;
+        }
+        .pershkrimiXhamit {
+            background: linear-gradient(71.76deg, #2e55ba -18.58%, #1a2246 108.04%);
+            color: white;
+            height: 657px;
+
+            .titulliPershkrimit {
+                width: 410px;
+                height: 110px;
+                margin-left: 64px;
+                margin-top: 81px;
+                font-weight: 500;
+                font-size: 40px;
+                text-align: initial;
+            }
+            .pershkrimiVogelXhamit {
+                width: 470px;
+                height: 116px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                margin-left: 64px;
+                text-align: initial;
+                display: flex;
+                flex-direction: column;
+            }
+            .buttoniXhamit {
+                margin-top: 80px;
+                color: #1d2853;
+                width: 120px;
+                height: 32px;
+                border-radius: 2px;
+                text-align: center;
+                font-style: normal;
                 font-weight: 700;
                 font-size: 20px;
-                border-color: white;
-                border-radius: 2px;
-                border: 2px solid #ffffff;
-                background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
-                    rgba(0, 0, 0, 0.5);
-                // opacity: 1.8%;
+                line-height: 23px;
+                border: none;
             }
         }
     }
-}
-.materialetPunuese {
-    height: 100vh;
-    .materialet {
-        margin: 5% auto;
-        position: static;
-        height: 90%;
-        width: 90%;
-        background: linear-gradient(80.04deg, #c0cce2 56.3%, #dadfe8 103.52%);
-    }
-    .porduketTitle {
-        color: #232d58;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        font-weight: 500;
-        font-size: 44px;
-        line-height: 55px;
-        font-style: normal;
-    }
-    .aranzhoCardat {
-        display: flex;
-        justify-content: space-evenly;
-        .card {
-            justify-content: space-between;
-            background-color: transparent;
-            border: none;
-            .card-img-top {
-                height: 323px;
-                border-radius: 0px;
-            }
-            .description {
-                .cardTitle {
-                    color: #232d58;
-                    font-weight: 500;
-                    font-size: 24px;
-                    line-height: 28px;
-                    margin-top: 15px;
-                    margin-bottom: 15px;
-                    letter-spacing: 0.01em;
-                }
-                .cardText {
-                    color: #232d58;
-                }
-            }
-        }
-    }
-}
-.descriptionOfWork {
-    background: linear-gradient(80.04deg, rgba(192, 204, 226, 0.2) 56.3%, rgba(218, 223, 232, 0.2) 103.52%);
-    mix-blend-mode: multiply;
-    opacity: 0.9;
-    .circle1 {
-        height: 58px;
-        width: 58px;
-        background-color: white;
-        border-radius: 50px;
-        margin-top: 6%;
-        margin-left: 23%;
-        position: absolute;
-        .teksti {
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    .pershkrimiXhamitPVC {
-        margin-top: 76px;
-        margin-bottom: 50px;
-    }
-    .pershkrimiXhamit {
-        background: linear-gradient(71.76deg, #2e55ba -18.58%, #1a2246 108.04%);
-        color: white;
-        height: 657px;
-
-        .titulliPershkrimit {
-            width: 441px;
-            height: 110px;
-            margin-left: 64px;
-            margin-top: 81px;
+    .SliderDiv {
+        height: 100vh;
+        .titulliSlider {
+            margin-top: 76px;
+            margin-bottom: 50px;
+            color: #232d58;
             font-weight: 500;
             font-size: 40px;
+            width: 65%;
             text-align: initial;
         }
-        .pershkrimiVogelXhamit {
-            width: 513px;
-            height: 116px;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 30px;
-            margin-left: 64px;
+        .pershkrimiSlider {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 32px;
+            color: #232d58;
+            width: 441px;
             text-align: initial;
+            display: flex;
+            flex-direction: column;
+            .buttoniSlider {
+                margin-top: 80px;
+                color: white;
+                width: 150px;
+                height: 40px;
+                border-radius: 2px;
+                text-align: center;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;
+                border: none;
+                background: linear-gradient(46.81deg, #2e55ba -11%, #1a2246 168.73%);
+            }
         }
-        .buttoniXhamit {
-            color: #1d2853;
-            width: 120px;
-            height: 32px;
-            border-radius: 2px;
+        .navigatedSlider {
+            // @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+            }
+
+            .flickity-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -70px;
+                height: 100vh;
+            }
+
+            .hand {
+                position: relative;
+                height: 100px;
+            }
+
+            .card {
+                font-size: 22px;
+                height: 100px;
+                width: 70px;
+                border: 3px solid #262722;
+                border-radius: 3px;
+                background-color: #b3704d;
+                background-color: lavender;
+                position: absolute;
+                top: 0;
+                transition: transform 0.2s ease;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+                span {
+                    background-color: #8badc8;
+                    display: none;
+                    margin: 0 auto;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 25px;
+                }
+
+                &.card-1 {
+                    z-index: 3;
+                    margin-left: 20px;
+                    animation-duration: 6s;
+                    animation-name: card-1;
+                    animation-iteration-count: infinite;
+                }
+                &.card-2 {
+                    z-index: 2;
+                    margin-left: 10px;
+                    animation-duration: 6s;
+                    animation-name: card-2;
+                    animation-iteration-count: infinite;
+                }
+                &.card-3 {
+                    z-index: 1;
+                    animation-duration: 6s;
+                    animation-name: card-3;
+                    animation-iteration-count: infinite;
+                }
+            }
+
+            @keyframes card-1 {
+                0% {
+                }
+                16.66666% {
+                    transform: translateX(95px) rotate(15deg);
+                } // slide out
+                33.33333% {
+                    transform: translateX(-20px);
+                    z-index: 1;
+                } // to back
+                49.99999% {
+                    transform: translateX(-20px);
+                    z-index: 1;
+                }
+                66.66666% {
+                    transform: translateX(-10px);
+                    z-index: 2;
+                } // to middle
+                83.33333% {
+                    transform: translateX(-10px);
+                    z-index: 2;
+                }
+            }
+
+            @keyframes card-2 {
+                0% {
+                }
+                16.66666% {
+                    transform: translateX(0);
+                }
+                33.33333% {
+                    transform: translateX(10px);
+                    z-index: 3;
+                } // to front
+                49.99999% {
+                    transform: translateX(105px) rotate(15deg);
+                } // slide out
+                66.66666% {
+                    transform: translateX(-10px);
+                    z-index: 1;
+                } //to back
+                83.33333% {
+                    transform: translateX(-10px);
+                    z-index: 1;
+                } //stay still
+            }
+
+            @keyframes card-3 {
+                0% {
+                    z-index: 1;
+                } //to back
+                16.66666% {
+                    transform: translateX(0);
+                }
+                33.33333% {
+                    transform: translateX(10px);
+                    z-index: 2;
+                } // to middle
+                49.99999% {
+                    transform: translateX(10px);
+                    z-index: 2;
+                } //stay still
+                66.66666% {
+                    transform: translateX(20px);
+                    z-index: 3;
+                } //to front
+                83.33333% {
+                    transform: translateX(115px) rotate(15deg);
+                } //slide out
+            }
+        }
+    }
+    .imazhiPrishtineDiv {
+        display: grid;
+        .imazhiPrishtines {
+            width: 100%;
+        }
+        .pershkrimiPrishtine {
+            position: absolute;
+            text-align: initial;
+            margin-left: 10%;
+            margin-top: 10%;
+            .TitulliPrishtine {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 45px;
+                color: #232d58;
+                max-width: 60% !important;
+            }
+            .vizaNdarese {
+                background: #232d58;
+                transform: matrix(1, 0, 0, -1, 0, 0);
+                height: 2.06px;
+                width: 60%;
+            }
+            ul {
+                li {
+                    color: #232d58;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 43px;
+                    letter-spacing: 0.02em;
+                }
+            }
+        }
+    }
+    .projektetErealizuara {
+        height: auto;
+        align-items: center;
+        .titulliProjekteve {
+            color: #232d58;
+            font-size: 40px;
+            font-weight: 500;
             text-align: center;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 23px;
-            margin-bottom: 226px;
-            margin-right: 73%;
-            border: none;
+            line-height: 55px;
+        }
+        .pershkrimiProjekteveTeRealizuara {
+            margin: 0 auto;
+            text-align: center;
+            width: 877px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 32px;
+            color: #232d58;
+        }
+        .singleCard {
+            width: 40%;
+            margin: 15px auto;
+            color: white;
+            .cardTitle {
+                position: relative;
+                top: 60%;
+                margin-left: 5%;
+                text-align: initial;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            .cardText {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 23px;
+                position: relative;
+                top: 60%;
+                margin-left: 5%;
+                text-align: initial;
+            }
+            p {
+            }
+        }
+    }
+    .partneretTane{
+        img{
+            margin: 1% 1%;
+            width: 141px;
+            height: 61px;
         }
     }
 }
+
+////////////////////////////////////////////////////////////////
+///////////////////// RESPONSIVITETI MOBIL /////////////////////
+////////////////////////////////////////////////////////////////
 @media only screen and (max-width: 600px) {
     .aranzhoCardat {
         display: block;

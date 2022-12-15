@@ -6,10 +6,13 @@ import AluminProdukt from "../../images/dashboard-images/Alumin-Produktet-2.png"
 import PVCimg from "../../images/dashboard-images/M-technologie-PVC-Product-2.png"
 import SpiderGlassIMG from "../../images/dashboard-images/Spider-Glass.png"
 import imageDescription from "../../images/dashboard-images/M-technologie-PVC-Product-2_5-removebg-preview.png"
-
+import imagePrishtina from "../../images/dashboard-images/pexels-max-vakhtbovych-7031616.png"
+import galleryData from "./gallerydata"
+import ourPartners from "./partneret"
 
 
 const Homepage = () => {
+
   return (
 
 
@@ -143,26 +146,35 @@ const Homepage = () => {
       <div className="col-12 descriptionOfWork d-flex">
         <div className="col-6 ">
 
-          <div className="circle1 ">
+          <div className="circle1">
             <div className="d-flex">
+              <h1 className='numri1'>1  <h2>Zgjedh   &nbsp; <strong> Profilin </strong></h2></h1>
 
-              <div className="teksti ">
-                <h1>1</h1>
-              </div>
-              <h2> Zgjedh<strong> Profilin </strong></h2>
+            </div>
+          </div>
+          <div className="circle2">
+            <div className="d-flex">
+              <h1 className='numri2'>2  <h2>Zgjedh   &nbsp; <strong> xhamin </strong></h2></h1>
+
+            </div>
+          </div>
+          <div className="circle3">
+            <div className="d-flex">
+              <h1 className='numri3'>3  <h2>Zgjedh   &nbsp; <strong> ngjyrën </strong></h2></h1>
+
             </div>
           </div>
           <img className='pershkrimiXhamitPVC' src={imageDescription} alt="Glass Description" />
         </div>
         <div className="col-6 pershkrimiXhamit">
-          <p className='titulliPershkrimit'>Projekto dritarën tënde <br />
+          <p className='titulliPershkrimit'>Projekto dritarën tënde
             në tre hapa!</p>
           <p className='pershkrimiVogelXhamit'>
-            Varësisht nga nevojat tuaja, me anë të vizualizimit në 3D<br />
-            ti mund të ndertosh dritaren tënde duke zgjedhur profilin,<br />
+            Varësisht nga nevojat tuaja, me anë të vizualizimit në 3D
+            ti mund të ndertosh dritaren tënde duke zgjedhur profilin,
             llojin e xhamave, dorëzave dhe ngjyren.
+            <button className='buttoniXhamit'> Projekto </button>
           </p>
-          <button className='buttoniXhamit'> Projekto </button>
         </div>
       </div>
 
@@ -170,7 +182,118 @@ const Homepage = () => {
       {/* //////////////////////////////////////////////////////////////////////// */}
 
 
-    </div>
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* ////////////////////////// SLIDERI MAGJUPVE ///////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+      <div className="col-12 SliderDiv container d-flex">
+        <div className="col-6">
+          <p className='titulliSlider'>Planifikim, projektim e realizim deri në detajet më të vogla</p>
+          <p className='pershkrimiSlider'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            <button className='buttoniSlider'>Ndërto tani</button>
+          </p>
+
+        </div>
+        <div className="col-6 navigatedSlider">
+          <div class="flickity-container">
+            <div class="hand">
+              <div class="card card-1"><span></span></div>
+              <div class="card card-2"><span></span></div>
+              <div class="card card-3"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* //////////////////////////// IMAZHI ME TEKST /////////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+      <div className="col-12 imazhiPrishtineDiv">
+        <img className='imazhiPrishtines' src={imagePrishtina} alt="" />
+        <div className="pershkrimiPrishtine ">
+          <p className='TitulliPrishtine'>Benefitet e dritareve të kualitetit të lartë</p>
+          <hr className='vizaNdarese' />
+          <ul>
+            <li>Increased home value</li>
+            <li>Enhanced home security and safety</li>
+            <li>Reduced dust and allergens</li>
+            <li>Improved home comfort</li>
+            <li>Improved energy efficiency</li>
+            <li>Noise reduction</li>
+            <li>Enhanced curb appeal</li>
+            <li>Low-maintenance solutions</li>
+          </ul>
+        </div>
+      </div>
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* ///////////////////////// PROJEKTET E REALIZUARA /////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+
+      <div className="container mt-5 projektetErealizuara">
+        <h1 className='titulliProjekteve'> Projektet e realizuara</h1>
+        <p className='pershkrimiProjekteveTeRealizuara'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        <div className="col-md-12">
+          <div className="row ">
+            {galleryData?.map((el) => {
+              return (
+                <>
+                  <div className="col-md-6 singleCard"
+                    style={{ backgroundImage: `url(${el?.img_src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: "415px" }}
+                  >
+                    {/* <img src={el?.img_src} class="card-img-top test img-fluid" alt={el?.img_src}  /> */}
+                    <h5 class="cardTitle">{el?.title}</h5>
+                    <p className="cardText mb-3">
+                      <i class="fas fa-map-marker-alt mb-5" aria-hidden="true" /> &nbsp;{el?.title}
+                    </p>
+                  </div>
+                </>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* ////////////////////////////// PARTNERET /////////////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+
+      <div className="col-12 mt-5 partneretTane">
+        {ourPartners.map((el) => {
+          return (
+
+            <img src={el?.img_src} alt={el.title} />
+          )
+        })}
+      </div>
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      {/* //////////////////////////////////////////////////////////////////////// */}
+
+    </div >
 
 
   )
