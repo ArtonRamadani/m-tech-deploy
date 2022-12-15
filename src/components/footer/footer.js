@@ -9,7 +9,7 @@ const Footer = () => {
                 <img className='col-12' src={FooterIMG} alt="" />
             </div>
             <div className="bottom container pb-5">
-                <div className=" footerBlocks col-3">
+                <div className=" footerBlocks mx-5 col-3">
                     <h4 className="titulliFooter">ABOUT US</h4>
 
                     <p className='tekstiAboutUsFooter'>M-Technologie është anëtare e kompanisë me renome ndërkombëtare, “MABETEX GROUP” me seli në Lugano të Zvicrës.</p>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <div className="col-3 Copyright">© 2022 m-technologie.com</div>
                 <div className="col-3"></div>
                 <div className="col-3"></div>
-                <div className="col-3 privacyPolicy">
+                <div className="col-3 mx-5 privacyPolicy">
 
                     <a href="#">Privacy Policy</a>
                     <a href="#">Sitemap</a>

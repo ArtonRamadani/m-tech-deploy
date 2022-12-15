@@ -17,7 +17,7 @@
                 .ImageDescription {
                     position: absolute;
                     left: 15%;
-                    top: 11%;
+                    top: 9%;
                     color: white;
                     text-align: start;
                     font-size: 50px;
@@ -25,7 +25,7 @@
                 }
                 .lokacioni {
                     position: absolute;
-                    top: 25%;
+                    top: 27%;
                     left: 15%;
                     justify-content: center;
                     align-items: baseline;
@@ -229,10 +229,15 @@
                 border-radius: 2px;
                 text-align: center;
                 font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 23px;
                 border: none;
+                .tekstiButton {
+                    text-align: center;
+                    margin-bottom: 5px;
+                    margin-top: 2.5px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                }
             }
         }
     }
@@ -495,8 +500,8 @@
             }
         }
     }
-    .partneretTane{
-        img{
+    .partneretTane {
+        img {
             margin: 1% 1%;
             width: 141px;
             height: 61px;

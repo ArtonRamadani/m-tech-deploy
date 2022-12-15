@@ -12,6 +12,7 @@ import ourPartners from "./partneret"
 
 
 const Homepage = () => {
+  let slicedGalley = galleryData.slice(0, 6);
 
   return (
 
@@ -23,20 +24,17 @@ const Homepage = () => {
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" className="active mainSliderButtons" aria-current="true" ></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" className='mainSliderButtons'></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" className='mainSliderButtons'></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4" className='mainSliderButtons'></button>
+          {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4" className='mainSliderButtons'></button> */}
         </div>
         <div className="carousel-inner">
-
-          {/* //////////////////////////////////////////////////////////////////////// */}
           {/* ////////////////////////// FIRST IMAGE SLIDER ////////////////////////// */}
-          {/* //////////////////////////////////////////////////////////////////////// */}
           <div className="carousel-item active">
             <div className="container" >
               <h1 className='ImageDescription ' data-aos="fade-right">Cilësi, inovacion dhe <br />zgjidhje e duhur</h1>
               <div className="lokacioni d-flex" data-aos="fade-right">
                 <h4 className='emri'>Projekti: </h4>
-                <h4 className='emriNderteses'> Spitali Onkologjik </h4>
-                <i class="fa fa-location-dot " />
+                <h4 className='emriNderteses'> &nbsp;Spitali Onkologjik </h4>
+                <i className="fa fa-location-dot " />
                 <h4 className='emriNderteses ms-2'> Kazakistan</h4>
               </div>
               <button className='shikoProjektin' data-aos="fade-right"> Shiko projektet</button>
@@ -44,26 +42,16 @@ const Homepage = () => {
             <img src={SliderImg1} className="d-block w-100" alt="..." />
           </div>
           {/* //////////////////////////////////////////////////////////////////////// */}
-          {/* //////////////////////////////////////////////////////////////////////// */}
 
-
-          {/* //////////////////////////////////////////////////////////////////////// */}
-          {/* ////////////////////////// SECOND IMAGE SLIDER ////////////////////////// */}
-          {/* //////////////////////////////////////////////////////////////////////// */}
           <div className="carousel-item">
             <img src={SliderImg2} className="d-block w-100" alt="..." />
           </div>
-          {/* //////////////////////////////////////////////////////////////////////// */}
-          {/* //////////////////////////////////////////////////////////////////////// */}
 
-          {/* //////////////////////////////////////////////////////////////////////// */}
-          {/* ////////////////////////// THIRD IMAGE SLIDER ////////////////////////// */}
           {/* //////////////////////////////////////////////////////////////////////// */}
 
           <div className="carousel-item">
             <img src={SliderImg2} className="d-block w-100" alt="..." />
           </div>
-          {/* //////////////////////////////////////////////////////////////////////// */}
           {/* //////////////////////////////////////////////////////////////////////// */}
 
         </div>
@@ -84,9 +72,8 @@ const Homepage = () => {
         <div className="materialet">
           <h1 className='porduketTitle'>Produkte të kualitetit të lartë!</h1>
           <div className="aranzhoCardat col-12">
-
             <div className="card col-3 pb-3">
-              <img className="card-img-top " src={AluminProdukt} />
+              <img className="card-img-top " alt="Alumni Project" src={AluminProdukt} />
               <div className="description">
                 <h5 className=" name-hide cardTitle">Produkte nga Alumini </h5>
                 <p className="card-text mb-3">
@@ -173,7 +160,7 @@ const Homepage = () => {
             Varësisht nga nevojat tuaja, me anë të vizualizimit në 3D
             ti mund të ndertosh dritaren tënde duke zgjedhur profilin,
             llojin e xhamave, dorëzave dhe ngjyren.
-            <button className='buttoniXhamit'> Projekto </button>
+            <button className='buttoniXhamit'> <p className='tekstiButton'> Projekto </p></button>
           </p>
         </div>
       </div>
@@ -196,11 +183,11 @@ const Homepage = () => {
 
         </div>
         <div className="col-6 navigatedSlider">
-          <div class="flickity-container">
-            <div class="hand">
-              <div class="card card-1"><span></span></div>
-              <div class="card card-2"><span></span></div>
-              <div class="card card-3"><span></span></div>
+          <div className="flickity-container">
+            <div className="hand">
+              <div className="card card-1"><span></span></div>
+              <div className="card card-2"><span></span></div>
+              <div className="card card-3"><span></span></div>
             </div>
           </div>
         </div>
@@ -249,16 +236,16 @@ const Homepage = () => {
         <p className='pershkrimiProjekteveTeRealizuara'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
         <div className="col-md-12">
           <div className="row ">
-            {galleryData?.map((el) => {
+            {slicedGalley?.map((el) => {
               return (
                 <>
                   <div className="col-md-6 singleCard"
                     style={{ backgroundImage: `url(${el?.img_src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: "415px" }}
                   >
-                    {/* <img src={el?.img_src} class="card-img-top test img-fluid" alt={el?.img_src}  /> */}
-                    <h5 class="cardTitle">{el?.title}</h5>
+                    {/* <img src={el?.img_src} className="card-img-top test img-fluid" alt={el?.img_src}  /> */}
+                    <h5 className="cardTitle">{el?.title}</h5>
                     <p className="cardText mb-3">
-                      <i class="fas fa-map-marker-alt mb-5" aria-hidden="true" /> &nbsp;{el?.title}
+                      <i className="fas fa-map-marker-alt mb-5" aria-hidden="true" /> &nbsp;{el?.title}
                     </p>
                   </div>
                 </>

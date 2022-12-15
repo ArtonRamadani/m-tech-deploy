@@ -41,7 +41,7 @@ const Header = () => {
                 <p role="button" className={language == labels_EN ? 'languagesButtons selectedLang' : 'languagesButtons'} onClick={(e) => { e.preventDefault(); setSelectedLanguage("EN") }}>EN</p>
                 <p role="button" className={language == labels_DE ? 'languagesButtons selectedLang' : 'languagesButtons'} onClick={(e) => { e.preventDefault(); setSelectedLanguage("DE") }}>DE</p>
             </div>
-            <button  className='headerB2Bbutton'>B2B</button>
+            <a href='#' target="_blank" className='headerB2Bbutton'>B2B</a>
         </div>
     )
 }

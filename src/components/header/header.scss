@@ -34,8 +34,12 @@
         }
     }
     .headerB2Bbutton{
+        cursor: pointer;
+        width: 60px;
+        text-decoration: none;
+        border: 2px solid white;
         background-color: transparent;
-        border-radius: 3px;
+        border-radius: 2px;
         border-color: white;
         color: white;
         font-size: x-large;

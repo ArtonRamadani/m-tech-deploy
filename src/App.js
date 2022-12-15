@@ -1,10 +1,11 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 // import logo from './logo.svg';
 import './App.css';
-import Homepage from "./containers/homepage/homepage";
-import ContactUs from "./containers/contactUs/contactUs";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import Homepage from "./containers/homepage/homepage";
+import ContactUs from "./containers/contactUs/contactUs";
+import TeatriDheHallaKoncerteve from "./containers/singlePages/teatriDheHallaKoncerteve"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 
           <Route path="/" element={<Homepage />} />
           <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/teatri-dhe-halla-koncerteve" element={<TeatriDheHallaKoncerteve />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
