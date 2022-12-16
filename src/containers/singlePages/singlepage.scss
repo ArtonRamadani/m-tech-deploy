@@ -2,7 +2,7 @@
     .fotografiaProjektit {
         .emriProjektit {
             position: absolute;
-            left: 5%;
+            left: 17%;
             top: 80%;
             color: white;
             font-size: 40px;
@@ -11,7 +11,7 @@
         }
         .lokacioniProjektit {
             position: absolute;
-            left: 5%;
+            left: 17%;
             color: white;
             top: 87%;
             font-weight: 600;
@@ -21,18 +21,19 @@
     }
     .pershkrimiProjektit {
         display: flex;
+        justify-content: center;
         height: auto;
         background: #f2f2f2;
         mix-blend-mode: normal;
         .vija {
-            margin: auto;
-            margin-right: 1%;
+            margin: auto 1% auto 1%;
             height: 40.5px;
             min-width: 2px;
             border-radius: 50px;
-            background: #D2D2D2;
+            background: #d2d2d2;
         }
         .statuset {
+            width: 15%;
             display: block;
             text-align: initial;
             .emriPershkrimit {
@@ -49,5 +50,60 @@
                 color: #222222;
             }
         }
+    }
+    .kontentiProjektit {
+        height: auto;
+        .rreshtimi {
+            .imazhi {
+            }
+        }
+        .pershkrimiImazhit {
+            display: flex;
+            flex-direction: column;
+            text-align: initial;
+            justify-content: space-around;
+            .detajetEprojektit {
+                .titulli {
+                    height: 65px;
+                    font-weight: 500;
+                    font-size: 36px;
+                    font-weight: 55px;
+                    color: #222222;
+                }
+                .tekstiSinglepage {
+                    height: auto;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            .materialet {
+                .titulli {
+                    height: 65px;
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 55px;
+                }
+                .listimiUL {
+                    list-style-type: none;
+                    // padding-left: 4%;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 32px;
+                    height: auto;
+                }
+                ul li:before {
+                    content: "\2014";
+                    position: absolute;
+                    margin-left: -28px;
+                    // margin-right: 20px;
+                }
+            }
+
+        }
+    }
+    .galleria{
+        height: 100vh;
+        background-color: #F2F2F2;
     }
 }

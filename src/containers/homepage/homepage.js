@@ -236,10 +236,12 @@ const Homepage = () => {
         <p className='pershkrimiProjekteveTeRealizuara'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
         <div className="col-md-12">
           <div className="row ">
+            {console.log('slicedGalley', slicedGalley)}
             {slicedGalley?.map((el) => {
+
               return (
                 <>
-                  <div className="col-md-6 singleCard"
+                  <div className="col-md-6 singleCard" onClick={(e) => { { e.preventDefault(); window.location.assign(`http://localhost:3000${el?.path}`) } }}
                     style={{ backgroundImage: `url(${el?.img_src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: "415px" }}
                   >
                     {/* <img src={el?.img_src} className="card-img-top test img-fluid" alt={el?.img_src}  /> */}

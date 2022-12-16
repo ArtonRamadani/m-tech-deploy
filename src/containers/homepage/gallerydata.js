@@ -2,11 +2,13 @@
 
 const imagesGallery = [
    {
+      path: "/project/TDT-1/residencial",
       img_src: "../../../images/dashboard-images/imageGallery/TDT-1-scaled.png",
       title: "DTD",
       location: "Tiranë"
    },
    {
+      path: "/project/Klinika-Pediatrike-Femijeve",
       img_src: "../../../images/dashboard-images/imageGallery/KlinikaPediatrikeFemijeve.png",
       title: "Klinika pediatrike e fëmijëve",
       location: "Tiranë"

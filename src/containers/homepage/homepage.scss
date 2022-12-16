@@ -5,10 +5,13 @@
                 width: 226.12px !important;
                 height: 2px;
             }
+            .mainSliderButtons {
+                border-radius: 20px;
+                height: 5px;
+            }
             .mainSliderButtons.active {
-                // height: 2px !important;
-                background: #2e34ba;
-                // border-radius: 50px;
+                background-color: #2e34ba;
+
                 // transform: matrix(1, 0, 0, -1, 0, 0);
             }
         }

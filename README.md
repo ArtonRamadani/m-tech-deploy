@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### HOW TO ADD A NEW POST IN GALLERY
+to list gallery projects in homepage, you need to go to ./src/containers/homepage/gallerydata.js to add new images and the needed data for that page, and to add the content for that page you need to go to ./src/containers/singlePage/singlePageData.js and add the needed content for Single Page 

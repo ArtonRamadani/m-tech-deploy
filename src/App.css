@@ -3,6 +3,9 @@
   src: local("AirbnbCerealLight"),
     url("./fonts/Roboto-Regular.ttf") format("truetype");
 }
+body{
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
   /* font-family: 'Roboto'; */

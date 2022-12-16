@@ -5,7 +5,7 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Homepage from "./containers/homepage/homepage";
 import ContactUs from "./containers/contactUs/contactUs";
-import TeatriDheHallaKoncerteve from "./containers/singlePages/teatriDheHallaKoncerteve"
+import SingleProjectPage from "./containers/singlePages/singleProjectPage"
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 
           <Route path="/" element={<Homepage />} />
           <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/teatri-dhe-halla-koncerteve" element={<TeatriDheHallaKoncerteve />} />
+          <Route path="/project/:id/:type" element={<SingleProjectPage/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
