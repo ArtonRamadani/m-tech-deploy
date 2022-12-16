@@ -6,9 +6,10 @@
                 height: 2px;
             }
             .mainSliderButtons.active {
-                height: 2px !important;
+                // height: 2px !important;
                 background: #2e34ba;
-                transform: matrix(1, 0, 0, -1, 0, 0);
+                // border-radius: 50px;
+                // transform: matrix(1, 0, 0, -1, 0, 0);
             }
         }
         .carousel-inner {
