@@ -54,6 +54,7 @@
     .kontentiProjektit {
         height: auto;
         .rreshtimi {
+            justify-content: center;
             .imazhi {
             }
         }
@@ -99,11 +100,108 @@
                     // margin-right: 20px;
                 }
             }
-
         }
     }
-    .galleria{
-        height: 100vh;
-        background-color: #F2F2F2;
+    .galleria {
+        height: auto;
+        background-color: #f2f2f2;
+        .titulliButtonat {
+            text-align: initial;
+            display: flex;
+            justify-content: center;
+
+            .butonatKotrollues {
+                display: flex;
+                width: 85%;
+                justify-content: space-around;
+                .butonatDheNumrat {
+                    display: flex;
+
+                    .butoniBack {
+                    }
+                    button {
+                        position: relative;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+        .react-3d-carousel .slider-container .slider-right div {
+            border-top: 2px solid #83B4CD;
+            border-right: 2px solid #83B4CD;
+            border-bottom: 2px solid #83B4CD;
+            border-left: 2px solid #83B4CD;
+        }
+        .react-3d-carousel .slider-container .slider-left div {
+            i{}
+            border-top: 2px solid #83B4CD;
+            border-right: 2px solid #83B4CD;
+            border-bottom: 2px solid #83B4CD;
+            border-left: 2px solid #83B4CD;
+        }
+    }
+    .projektetErealizuara {
+        height: auto;
+        align-items: center;
+        .tekstiProjekteveTengjashme {
+            display: flex;
+            justify-content: space-between;
+            .titulliProjekteve {
+                color: #232d58;
+                font-size: 40px;
+                font-weight: 500;
+                text-align: initial;
+                line-height: 55px;
+            }
+            .numrimiProjekteve {
+                font-weight: 300;
+                font-size: 36px;
+                line-height: 55px;
+                text-align: right;
+                color: #222222;
+            }
+        }
+        .pershkrimiProjekteveTeRealizuara {
+            margin: 0 auto;
+            text-align: center;
+            width: 877px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 32px;
+            color: #232d58;
+        }
+        .singleCard {
+            width: 48%;
+            margin: 15px auto;
+            color: white;
+            .cardTitle {
+                position: relative;
+                top: 60%;
+                margin-left: 5%;
+                text-align: initial;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            .cardText {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 23px;
+                position: relative;
+                top: 60%;
+                margin-left: 5%;
+                text-align: initial;
+            }
+            p {
+            }
+        }
+    }
+    .partneretTane {
+        img {
+            margin: 1% 1%;
+            width: 141px;
+            height: 61px;
+        }
     }
 }

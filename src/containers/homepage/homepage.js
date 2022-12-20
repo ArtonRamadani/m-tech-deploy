@@ -7,13 +7,13 @@ import PVCimg from "../../images/dashboard-images/M-technologie-PVC-Product-2.pn
 import SpiderGlassIMG from "../../images/dashboard-images/Spider-Glass.png"
 import imageDescription from "../../images/dashboard-images/M-technologie-PVC-Product-2_5-removebg-preview.png"
 import imagePrishtina from "../../images/dashboard-images/pexels-max-vakhtbovych-7031616.png"
-import galleryData from "./gallerydata"
-import ourPartners from "./partneret"
+import galleryData from "../../DB/singlePageData.json"
+import ourPartners from "../../DB/partneret"
 
 
 const Homepage = () => {
   let slicedGalley = galleryData.slice(0, 6);
-
+  console.log('slicedGalley', slicedGalley)
   return (
 
 
@@ -30,14 +30,14 @@ const Homepage = () => {
           {/* ////////////////////////// FIRST IMAGE SLIDER ////////////////////////// */}
           <div className="carousel-item active">
             <div className="container" >
-              <h1 className='ImageDescription ' data-aos="fade-right">Cilësi, inovacion dhe <br />zgjidhje e duhur</h1>
-              <div className="lokacioni d-flex" data-aos="fade-right">
+              <h1 className='ImageDescription ' data-aos="fade-right" data-aos-duration="1500">Cilësi, inovacion dhe <br />zgjidhje e duhur</h1>
+              <div className="lokacioni d-flex" data-aos="fade-right" data-aos-duration="1500" >
                 <h4 className='emri'>Projekti: </h4>
                 <h4 className='emriNderteses'> &nbsp;Spitali Onkologjik </h4>
                 <i className="fa fa-location-dot " />
                 <h4 className='emriNderteses ms-2'> Kazakistan</h4>
               </div>
-              <button className='shikoProjektin' data-aos="fade-right"> Shiko projektet</button>
+              <button className='shikoProjektin' data-aos="fade-right" data-aos-duration="3000" > Shiko projektet</button>
             </div>
             <img src={SliderImg1} className="d-block w-100" alt="..." />
           </div>
@@ -72,7 +72,10 @@ const Homepage = () => {
         <div className="materialet">
           <h1 className='porduketTitle'>Produkte të kualitetit të lartë!</h1>
           <div className="aranzhoCardat col-12">
-            <div className="card col-3 pb-3">
+            <div className="card col-3 pb-3"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
               <img className="card-img-top " alt="Alumni Project" src={AluminProdukt} />
               <div className="description">
                 <h5 className=" name-hide cardTitle">Produkte nga Alumini </h5>
@@ -88,7 +91,10 @@ const Homepage = () => {
             </div> */}
             </div>
 
-            <div className="card col-3 mb-3">
+            <div className="card col-3 mb-3"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500">
               <img className="card-img-top " src={PVCimg} />
               <div className="description">
                 <h5 className=" name-hide cardTitle">Produkte nga Alumini </h5>
@@ -102,7 +108,10 @@ const Homepage = () => {
             </div> */}
             </div>
 
-            <div className="card col-3 pb-3 ">
+            <div className="card col-3 pb-3 "
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <img className="card-img-top " src={SpiderGlassIMG} />
               <div className="description">
                 <h5 className=" name-hide cardTitle">Produkte nga Alumini </h5>
@@ -238,16 +247,14 @@ const Homepage = () => {
           <div className="row ">
             {console.log('slicedGalley', slicedGalley)}
             {slicedGalley?.map((el) => {
-
               return (
                 <>
-                  <div className="col-md-6 singleCard" onClick={(e) => { { e.preventDefault(); window.location.assign(`http://localhost:3000${el?.path}`) } }}
-                    style={{ backgroundImage: `url(${el?.img_src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: "415px" }}
+                  <div className="col-md-6 singleCard" onClick={(e) => { { e.preventDefault(); window.location.assign(`http://localhost:3000${el?.pageUniqueURL}`) } }}
+                    style={{ backgroundImage: `url(${el?.bg_img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: "415px" }}
                   >
-                    {/* <img src={el?.img_src} className="card-img-top test img-fluid" alt={el?.img_src}  /> */}
-                    <h5 className="cardTitle">{el?.title}</h5>
+                    <h5 className="cardTitle">{el?.location}</h5>
                     <p className="cardText mb-3">
-                      <i className="fas fa-map-marker-alt mb-5" aria-hidden="true" /> &nbsp;{el?.title}
+                      <i className="fas fa-map-marker-alt mb-5" aria-hidden="true" /> &nbsp;{el?.obijektiName}
                     </p>
                   </div>
                 </>
@@ -270,10 +277,12 @@ const Homepage = () => {
 
 
       <div className="col-12 mt-5 partneretTane">
-        {ourPartners.map((el) => {
+        {ourPartners.map((el, index) => {
           return (
+       
 
-            <img src={el?.img_src} alt={el.title} />
+              <img data-aos="fade-right" data-aos-duration="1000"src={el?.img_src} alt={el.title} />
+       
           )
         })}
       </div>

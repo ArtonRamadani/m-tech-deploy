@@ -5,6 +5,8 @@
 }
 body{
   overflow-x: hidden;
+  position: static;
+  top: 0;
 }
 .App {
   text-align: center;

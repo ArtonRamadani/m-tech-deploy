@@ -15,5 +15,29 @@
             "content": "Teatri mbulon një sipërfaqe prej 64,000 metrash katrorë. Një nga teatrot më të mira në botë, me një sintezë të përsosur e stilit klasik dhe teknologjisë së përparuar, e ndërtuar me vëmendje të madhe me detaje dhe materiale me cilësi të lartë.",
             "name": "Shqip"
         }
+    ],
+    "labels_DE": [
+        {
+            "content": "Über uns",
+            "key": "AboutUs",
+            "name": "German"
+        },
+           {
+            "key": "Projects",
+            "content": "Projekt",
+            "name": "German"
+        }
+    ],
+    "labels_EN": [
+        {
+            "key": "Projects",
+            "content": "Projects",
+            "name": "Shqip"
+        },
+        {
+            "content": "About Us",
+            "key": "AboutUs",
+            "name": "Shqip"
+        }
     ]
 }
