@@ -22,8 +22,8 @@ const Homepage = () => {
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" className="active mainSliderButtons" aria-current="true" ></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" className='mainSliderButtons'></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" className='mainSliderButtons'></button>
+          {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" className='mainSliderButtons'></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" className='mainSliderButtons'></button> */}
           {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4" className='mainSliderButtons'></button> */}
         </div>
         <div className="carousel-inner">
@@ -43,15 +43,15 @@ const Homepage = () => {
           </div>
           {/* //////////////////////////////////////////////////////////////////////// */}
 
-          <div className="carousel-item">
+          {/* <div className="carousel-item">
             <img src={SliderImg2} className="d-block w-100" alt="..." />
-          </div>
+          </div> */}
 
           {/* //////////////////////////////////////////////////////////////////////// */}
 
-          <div className="carousel-item">
+          {/* <div className="carousel-item">
             <img src={SliderImg2} className="d-block w-100" alt="..." />
-          </div>
+          </div> */}
           {/* //////////////////////////////////////////////////////////////////////// */}
 
         </div>

@@ -31,7 +31,7 @@ const Header = () => {
     return (
         <div className='header' style={pathi == "/projects" ? { position: "relative", background: "linear-gradient(0deg, #1A2246, #1A2246)" } : { position: "absolute" }}>
             <div className="logo"
-                onClick={(e) => { e.preventDefault(); window.location.assign("/") }}
+                onClick={(e) => { e.preventDefault(); window.location.href="/" }}
             >
                 <img className='imgLogo' src={companyLogo} alt="m-Technologie" />
             </div>
