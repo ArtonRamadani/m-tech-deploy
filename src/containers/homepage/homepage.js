@@ -22,9 +22,9 @@ const Homepage = () => {
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" className="active mainSliderButtons" aria-current="true" ></button>
-          {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" className='mainSliderButtons'></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" className='mainSliderButtons'></button> */}
-          {/* <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4" className='mainSliderButtons'></button> */}
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" className='mainSliderButtons'></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" className='mainSliderButtons'></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4" className='mainSliderButtons'></button>
         </div>
         <div className="carousel-inner">
           {/* ////////////////////////// FIRST IMAGE SLIDER ////////////////////////// */}
@@ -37,21 +37,21 @@ const Homepage = () => {
                 <i className="fa fa-location-dot " />
                 <h4 className='emriNderteses ms-2'> Kazakistan</h4>
               </div>
-              <button className='shikoProjektin' data-aos="fade-right" data-aos-duration="3000" > Shiko projektet</button>
+              <button onClick={(e)=>{e.preventDefault(); window.location.href="/projects"}} className='shikoProjektin' data-aos="fade-right" data-aos-duration="3000" > Shiko projektet</button>
             </div>
             <img src={SliderImg1} className="d-block w-100" alt="..." />
           </div>
           {/* //////////////////////////////////////////////////////////////////////// */}
 
-          {/* <div className="carousel-item">
+          <div className="carousel-item">
             <img src={SliderImg2} className="d-block w-100" alt="..." />
-          </div> */}
+          </div>
 
           {/* //////////////////////////////////////////////////////////////////////// */}
 
-          {/* <div className="carousel-item">
+          <div className="carousel-item">
             <img src={SliderImg2} className="d-block w-100" alt="..." />
-          </div> */}
+          </div>
           {/* //////////////////////////////////////////////////////////////////////// */}
 
         </div>
@@ -183,7 +183,7 @@ const Homepage = () => {
       {/* ////////////////////////// SLIDERI MAGJUPVE ///////////////////////// */}
       {/* //////////////////////////////////////////////////////////////////////// */}
 
-      <div className="col-12 SliderDiv container d-flex">
+      <div className=" SliderDiv container d-flex">
         <div className="col-6">
           <p className='titulliSlider'>Planifikim, projektim e realizim deri në detajet më të vogla</p>
           <p className='pershkrimiSlider'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
@@ -249,8 +249,8 @@ const Homepage = () => {
             {slicedGalley?.map((el) => {
               return (
                 <>
-                  <div className="col-md-6 singleCard" onClick={(e) => { { e.preventDefault(); window.location.assign(`http://localhost:3000${el?.pageUniqueURL}`) } }}
-                    style={{ backgroundImage: `url(${el?.bg_img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: "415px" }}
+                  <div className="col-md-5 singleCard" onClick={(e) => { { e.preventDefault(); window.location.assign(`http://localhost:3000${el?.pageUniqueURL}`) } }}
+                    style={{ backgroundImage: `url(${el?.bg_img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: "370px" }}
                   >
                     <h5 className="cardTitle">{el?.location}</h5>
                     <p className="cardText mb-3">
